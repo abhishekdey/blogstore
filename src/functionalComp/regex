@@ -1,0 +1,54 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var instance =  new function() {
+    this.instance;
+ 
+    if (!this.instance) {
+        this.instance = new Object();
+    }
+
+    return this.instance;
+}
+
+var oneinstance = instance();
+var secondInstance = instance();
+
+oneinstance === secondInstance; 
+
+
+
+//onyghe yfunction where 
+
+// @nums:  Array  @target : number, @return : array  length: 2 [,]
+var fn = function(nums, target) {
+    for(var i = 0; i< nums.length; i++) {
+        let indexArray = target - nums[i];
+        for(var j = 0;j< nums.length; j++) {
+            if(i !== j && indexArray === nums[j])
+                 return [i,j];
+        }
+    }
+}
+
+var instance = 
+
+var str = "qqqABApqdddpq";
+var myexec, rgxp = /(p)q/i;
+
+while (myexec, rgxp.exec(str) {
+    console.log(myexec[i])
+});
+console.log(myexec);
