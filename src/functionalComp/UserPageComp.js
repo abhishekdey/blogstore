@@ -1,6 +1,7 @@
 import { useAuth } from './ProvideAuth.component';
 
 export default function UserPage() {
+  console.log('sdskdsk');
   const auth = useAuth();
   const details = auth.getUserDetails();
  

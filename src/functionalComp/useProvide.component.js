@@ -9,7 +9,8 @@ const useProvideAuth = () => {
     useEffect(
         async () => {
             try {
-                const result = await axios(userDetails);
+                const result = await axios.get(userDetails);
+                // axios.post    axios.get(userDetails).then((response) => console.log(response))
                 setResult(result.data);
             } catch (err) {
                 console.log(err);
@@ -20,6 +21,7 @@ const useProvideAuth = () => {
         const validUser = true;
         return validUser && fakeAuth.authenticate(() => {
             setUser("user");
+            //setTimeout(() =>{setUser("uerererfffser"); console.log("uerererseeer")}, 5*1000);
             cb();
         })
     }

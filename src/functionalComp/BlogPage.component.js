@@ -6,7 +6,7 @@ import BloggerDetils from './BloggerDetails.component';
 
 export default function BlogPage() {
   const [blogs, setBlog] = useState([]);
-  const { path } = useRouteMatch();
+  const { path } = '';
 
   useEffect(
     async () => {

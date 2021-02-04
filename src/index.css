@@ -139,3 +139,37 @@ ul {
 a {
   text-decoration: none;
 }
+
+.outer-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: black;
+  width: 400px;
+  height: 100px;
+}
+
+.inner-div {
+  	background-color: red;
+    width: 240px;
+    border: 1px solid white;
+    flex: 1 0 auto;
+}
+
+ul {
+  display: inline-flex;
+}
+
+li {
+  padding: 0 10px;
+}
+
+li:focus {
+  color: #db2269;
+}
+li:hover {
+  color: firebrick;
+}
+li:visited {
+  color: darkgoldenrod
+}

@@ -7,7 +7,7 @@ const AuthButton = () => {
   return auth.user ? '' : (
       <Redirect
         to={{
-          pathname: '/home'
+          pathname: '/login'
         }}
       />
     )
